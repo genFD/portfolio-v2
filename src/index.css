@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------- */
+/* Reset starts             */
+/* ------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+/* set up smooth-scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: #121c30;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+textarea {
+  resize: none;
+}
+
+/* Remove default bullets */
+ul {
+  list-style: none;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* interactive elements */
+/* ------------------- */
+.primary-btn {
+  transition: 0.3s ease-in-out background;
+}
+.primary-btn:hover * {
+  stroke: #fafafa;
+}
+
+/* ------------------- */
+/* Header */
+/* ------------------- */
+
+.social-icons li a svg :hover {
+  fill: #5fb4a2;
+  scale: 1.5;
+}
+
+/* ------------------- */
+/* Hero */
+/* ------------------- */
+
+.heading {
+  max-width: 277px;
+}
+
+/* ------------------- */
+/* About */
+/* ------------------- */
+
+.about-description {
+  max-width: 500px;
+}
+@media (min-width: 1024px) {
+  .about-description {
+    max-width: 720px;
+  }
+}
+
+/* ------------------- */
+/* Footer */
+/* ------------------- */
+
+.heading-footer {
+  max-width: 277px;
+}
+@media (min-width: 768px) {
+  .heading-footer {
+    max-width: 330px;
+  }
+}

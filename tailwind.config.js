@@ -11,6 +11,7 @@ module.exports = {
       'very-light-grey': '#FAFAFA',
       'light-grey': '#EAEAEB',
       'bright-red': '#F43030',
+      Peach: '#F49F85',
       'body-bg': 'rgb(227, 224, 247)',
     },
     fontFamily: {

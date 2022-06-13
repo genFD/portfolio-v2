@@ -8,6 +8,8 @@ import About from './About';
 import Footer from './Footer';
 import AboutSvg from './AboutSvg';
 import ServerSvg from './ServerSvg';
+import ContactMe from './ContactMe';
+import Project from './Project';
 export {
   Button,
   Loader,
@@ -19,4 +21,6 @@ export {
   Divider,
   AboutSvg,
   ServerSvg,
+  ContactMe,
+  Project,
 };

@@ -1,16 +1,10 @@
 import React from 'react';
+import { ContactMe } from '../components';
 
 const Footer = () => {
   return (
-    <footer className="mt-8 ">
-      <div className="flex flex-col items-center gap-10 px-8 tablet:flex-row tablet:justify-between tablet:px-10 laptop:px-40 w-full">
-        <h3 className="text-heading-2 heading-footer text-very-light-grey text-center">
-          Interested in doing a project together?
-        </h3>
-        <button className="w-40 h-12 border text-very-light-grey">
-          Contact me
-        </button>
-      </div>
+    <footer className="mt-20">
+      <ContactMe />
       <div
         className="bg-dark-blue flex flex-col gap-y-10   justify-center items-center mt-20 h-80 tablet:flex-row tablet:justify-between tablet:h-20 tablet:gap-x-6 tablet:px-10
       laptop:px-40"

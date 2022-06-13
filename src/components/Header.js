@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu } from '../components';
 import { useGlobalContext } from '../context/context';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { showMenu, hideMenu, menu } = useGlobalContext();
@@ -32,24 +33,37 @@ const Header = () => {
             onClick={showMenu}
             className="menu-btn cursor-pointer tablet:hidden"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="13">
-              <g fill="#EAEAEB" fillRule="evenodd">
-                <path d="M0 0h24v1H0zM0 6h24v1H0zM0 12h24v1H0z" />
-              </g>
+            <svg
+              width="26"
+              height="18"
+              viewBox="0 0 26 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+                fill="#EAEAEB"
+              />
             </svg>
           </button>
         )}
 
         <ul className="hidden tablet:flex tablet:gap-x-10">
-          <li className="text-body-3 text-light-grey uppercase hover:text-desaturated-cyan cursor-pointer">
-            Home
-          </li>
-          <li className="text-body-3 text-light-grey uppercase hover:text-desaturated-cyan cursor-pointer">
-            Portfolio
-          </li>
-          <li className="text-body-3 text-light-grey uppercase hover:text-desaturated-cyan cursor-pointer">
-            Contact me
-          </li>
+          <Link to="/home">
+            <li className="text-body-3 text-light-grey uppercase hover:text-desaturated-cyan cursor-pointer">
+              Home
+            </li>
+          </Link>
+          <Link to="/portfolio">
+            <li className="text-body-3 text-light-grey uppercase hover:text-desaturated-cyan cursor-pointer">
+              Portfolio
+            </li>
+          </Link>
+          <Link to="/contact">
+            <li className="text-body-3 text-light-grey uppercase hover:text-desaturated-cyan cursor-pointer">
+              Contact me
+            </li>
+          </Link>
         </ul>
       </nav>
       {menu && <Menu />}

@@ -123,3 +123,42 @@ ul {
     max-width: 330px;
   }
 }
+
+/* ------------------- */
+/* portfolio  */
+/* ------------------- */
+
+.project-snap img {
+  min-width: 256px;
+  object-fit: cover;
+}
+.project-description .divider {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 768px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+  .project-description .divider {
+    margin-top: 0;
+  }
+  .project-description-text {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-description-text {
+    max-width: 500px;
+  }
+  .project-snap img {
+    filter: grayscale(100%);
+    transition: all 0.2s ease;
+  }
+  .project-snap img:hover {
+    filter: grayscale(0);
+  }
+}

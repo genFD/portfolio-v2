@@ -1,4 +1,4 @@
-import { About, Header, Hero, Divider } from '../components';
+import { About, Header, Hero, Divider, Footer } from '../components';
 
 function Home() {
   return (
@@ -10,6 +10,7 @@ function Home() {
         <About />
         <Divider />
       </main>
+      <Footer />
     </div>
   );
 }

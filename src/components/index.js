@@ -9,7 +9,9 @@ import Footer from './Footer';
 import AboutSvg from './AboutSvg';
 import ServerSvg from './ServerSvg';
 import ContactMe from './ContactMe';
+import Projects from './Projects';
 import Project from './Project';
+
 export {
   Button,
   Loader,
@@ -23,4 +25,5 @@ export {
   ServerSvg,
   ContactMe,
   Project,
+  Projects,
 };

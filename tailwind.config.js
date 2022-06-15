@@ -5,6 +5,10 @@ module.exports = {
   theme: {
     colors: {
       'desaturated-cyan': '#5FB4A2',
+      devjobs: '#5964E0',
+      audiophile: '#D87D4A',
+      feedback: '#AD1FEA',
+      invoice: '#7C5DFA',
       'dark-blue': '#203A4C',
       'dark-dark': '#222',
       'grayish-dark-blue': ' #33323D',
@@ -34,10 +38,12 @@ module.exports = {
     extend: {
       width: {
         200: '200px',
+        400: '400px',
       },
       height: {
         'two-px': '2px',
         186: '186px',
+        200: '200px',
       },
     },
   },

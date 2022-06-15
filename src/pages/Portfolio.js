@@ -1,14 +1,11 @@
 import React from 'react';
-import { Footer, Header, Project } from '../components';
-import { ProjectsData } from '../data/ProjectsData';
+import { Footer, Header, Projects } from '../components';
 
 function Portfolio() {
   return (
     <div className="main-projects-container">
       <Header />
-      {ProjectsData.map((project) => {
-        return <Project key={project.id} {...project} />;
-      })}
+      <Projects />
       <Footer />
     </div>
   );

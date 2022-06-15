@@ -3,7 +3,7 @@ import { ContactMe } from '../components';
 
 const Footer = () => {
   return (
-    <footer className="mt-20">
+    <footer className="mt-20 laptop:mt-40">
       <ContactMe />
       <div
         className="bg-dark-blue flex flex-col gap-y-10   justify-center items-center mt-20 h-80 tablet:flex-row tablet:justify-between tablet:h-20 tablet:gap-x-6 tablet:px-10

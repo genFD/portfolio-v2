@@ -127,38 +127,46 @@ ul {
 /* ------------------- */
 /* portfolio  */
 /* ------------------- */
+.project-card {
+  height: 632px;
+  width: 311px;
+  flex-direction: column;
+}
 
-.project-snap img {
-  min-width: 256px;
-  object-fit: cover;
-}
-.project-description .divider {
-  padding-left: 0;
-  padding-right: 0;
-}
 @media (min-width: 768px) {
-  .project-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
+  .project-card {
+    height: 418px;
+    width: 689px;
+    /* border: 1px solid #5fb4a2; */
+    flex-direction: row;
   }
-  .project-description .divider {
-    margin-top: 0;
+  .project-info {
+    flex-basis: 50%;
   }
-  .project-description-text {
-    max-width: 300px;
+  .snap-container {
+    flex-basis: 50%;
+  }
+  .project-snapshot {
+    height: 100%;
+    object-fit: contain;
   }
 }
 
 @media (min-width: 1024px) {
-  .project-description-text {
-    max-width: 500px;
+  .project-card {
+    height: 500px;
+    width: 1015px;
+    border: 1px solid #5fb4a2;
   }
-  .project-snap img {
-    filter: grayscale(100%);
-    transition: all 0.2s ease;
+  .snap-container {
+    width: 540px;
   }
-  .project-snap img:hover {
-    filter: grayscale(0);
+  .project-snapshot {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-info {
+    width: calc(100% - 540px);
   }
 }

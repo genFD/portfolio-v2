@@ -1,5 +1,5 @@
 function ProjectDetail() {
-  return <div>ProjectDetail</div>;
+  return <div>project detail</div>;
 }
 
 export default ProjectDetail;

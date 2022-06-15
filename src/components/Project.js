@@ -11,12 +11,12 @@ const Project = ({ id, title, description, image }) => {
             src={image}
             alt="project-snap"
           />
-          <button className="btn-colored"></button>
         </div>
       </Link>
       <div className="project-description">
         <Divider />
-        <h3 className="text-very-light-grey mb-6 mt-6">{title}</h3>
+        <h3 className="text-very-light-grey mt-6">{title}</h3>
+        <hr className="h-two-px w-10 mt-2 mb-6 bg-desaturated-cyan" />
         <p className="text-very-light-grey mb-6 project-description-text">
           {description}
         </p>

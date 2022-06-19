@@ -12,7 +12,7 @@ const Button = ({ children }) => {
           </svg>
         </span>
 
-        <span className="text-light-grey uppercase text-body-3 w-full h-full flex items-center justify-center">
+        <span className="uppercase text-body-3 w-full h-full flex items-center justify-center">
           {children}
         </span>
       </a>

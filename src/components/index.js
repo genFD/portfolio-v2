@@ -10,7 +10,13 @@ import AboutSvg from './AboutSvg';
 import ServerSvg from './ServerSvg';
 import ContactMe from './ContactMe';
 import Projects from './Projects';
-import Project from './Project';
+import Footerback from './Footerback';
+import ContactForm from './ContactForm';
+import Text from './Text';
+import Input from './Input';
+import Textarea from './Textarea';
+import Submitting from './Submitting';
+import AnimatedRoute from './AnimatedRoute';
 
 export {
   Button,
@@ -24,6 +30,12 @@ export {
   AboutSvg,
   ServerSvg,
   ContactMe,
-  Project,
   Projects,
+  Footerback,
+  ContactForm,
+  Text,
+  Input,
+  Textarea,
+  Submitting,
+  AnimatedRoute,
 };

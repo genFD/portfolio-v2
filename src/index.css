@@ -34,6 +34,7 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   background-color: #121c30;
+  color: rgb(227, 224, 247);
 }
 
 /* make images easier to work with */
@@ -127,46 +128,87 @@ ul {
 /* ------------------- */
 /* portfolio  */
 /* ------------------- */
-.project-card {
-  height: 632px;
-  width: 311px;
-  flex-direction: column;
+
+.cards-center {
+  width: 80vw;
+  max-width: 1170px;
+  display: grid;
+  column-gap: 32px;
+  /* grid-template-columns: repeat(auto-fill, minmax(368px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
+}
+.card {
+  margin-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
-  .project-card {
-    height: 418px;
-    width: 689px;
-    /* border: 1px solid #5fb4a2; */
-    flex-direction: row;
-  }
-  .project-info {
-    flex-basis: 50%;
-  }
-  .snap-container {
-    flex-basis: 50%;
-  }
-  .project-snapshot {
-    height: 100%;
-    object-fit: contain;
-  }
+.card-header {
+  height: 20px;
+  width: 100%;
+  background-color: rgb(227, 224, 247);
+  background-color: #121c30;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 0.5rem;
+}
+.card-header span {
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+}
+.card-info {
+  padding: 1rem;
+}
+.form {
+  width: 90vw;
+  max-width: 689px;
+  margin: 3rem auto;
+}
+.form-row {
+  margin-bottom: 1.5rem;
 }
 
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  background: rgb(227, 224, 247);
+  color: #33323d;
+}
+.form-textarea {
+  height: 6rem;
+}
+::placeholder {
+  font-family: inherit;
+  color: #33323d;
+}
+.form-alert {
+  color: #f43030;
+  display: none;
+}
+
+input:invalid[focused='true'] ~ .form-alert {
+  display: block;
+}
+input:invalid[focused='true'] {
+  border: 1px solid #f43030;
+}
+textarea:invalid[focused='true'] ~ .form-alert {
+  display: block;
+}
+textarea:invalid[focused='true'] {
+  border: 1px solid #f43030;
+}
+.closing-text {
+  max-width: 60rem;
+}
 @media (min-width: 1024px) {
-  .project-card {
-    height: 500px;
-    width: 1015px;
-    border: 1px solid #5fb4a2;
-  }
-  .snap-container {
-    width: 540px;
-  }
-  .project-snapshot {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .project-info {
-    width: calc(100% - 540px);
+  .form {
+    margin: 0 -1rem;
   }
 }

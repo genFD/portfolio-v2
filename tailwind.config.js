@@ -10,6 +10,7 @@ module.exports = {
       feedback: '#AD1FEA',
       invoice: '#7C5DFA',
       'dark-blue': '#203A4C',
+      'Rubber-Ducky': '#F7CE5B',
       'dark-dark': '#222',
       'grayish-dark-blue': ' #33323D',
       'very-light-grey': '#FAFAFA',
@@ -17,6 +18,7 @@ module.exports = {
       'bright-red': '#F43030',
       Peach: '#F49F85',
       'body-bg': 'rgb(227, 224, 247)',
+      body: '#121c30',
     },
     fontFamily: {
       jost: 'Jost, sans-serif',
@@ -26,6 +28,7 @@ module.exports = {
       'body-1': ['16px', { lineHeight: '30px' }],
       'body-2': ['15px', { lineHeight: '30px' }],
       'body-3': ['12px', { lineHeight: '14px', letterSpacing: '2px' }],
+      'body-4': ['13px', { lineHeight: '30px', letterSpacing: '2px' }],
       'heading-1': ['50px', { lineHeight: '50px', letterSpacing: '-.0.36' }],
       'heading-2': ['40px', { lineHeight: '42px', letterSpacing: '-.0.36' }],
       'heading-3': ['32px', { lineHeight: '36px', letterSpacing: '-.0.29' }],

@@ -1,13 +1,18 @@
 import React from 'react';
-import { Footer, Header, Projects } from '../components';
+import { Footer, Projects } from '../components';
+import { motion } from 'framer-motion';
 
 function Portfolio() {
   return (
-    <div className="main-projects-container">
-      <Header />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="main-projects-container"
+    >
       <Projects />
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

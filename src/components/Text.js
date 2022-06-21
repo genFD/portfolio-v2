@@ -2,7 +2,7 @@ import React from 'react';
 
 const Text = () => {
   return (
-    <div className="px-8 tablet:px-10 laptop:px-40">
+    <div className="px-8 tablet:px-10 laptop:px-40 closing-text-container">
       <div className="title mb-6">
         <h3>Get in Touch</h3>
       </div>

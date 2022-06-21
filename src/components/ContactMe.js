@@ -8,7 +8,9 @@ const ContactMe = () => {
         Interested in doing a project together?
       </h3>
       <Link to="/contact">
-        <button className="w-40 h-12 border ">Contact me</button>
+        <button className="w-40 h-12 border hover:border-desaturated-cyan transition-colors duration-300">
+          Contact me
+        </button>
       </Link>
     </div>
   );

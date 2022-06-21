@@ -22,7 +22,7 @@ const About = () => {
           to check out my work.
         </p>
         <Link to="/portfolio">
-          <button className="w-40 h-12 mt-8 self-end border-very-light-grey border">
+          <button className="w-40 h-12 mt-8 self-end border-very-light-grey border hover:border-desaturated-cyan transition-colors duration-300">
             Go to portfolio
           </button>
         </Link>

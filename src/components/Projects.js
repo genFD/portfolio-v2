@@ -4,10 +4,14 @@ const Projects = () => {
       <section className="cards py-16">
         <div className="title text-center desktop:mb-36 ">
           <h2 className="font-bold text-heading-3">Projects</h2>
+          <p>
+            CRUD RESTful API in a Node.js environment that runs on an Express
+            server and uses a PostgreSQL database
+          </p>
         </div>
         <div className="cards-center my-8 mx-auto">
           {/* single card */}
-          <article className="card border border-devjobs">
+          <article className="card cursor-pointer border border-devjobs">
             <header className="card-header">
               <span className="bg-bright-red"></span>
               <span className="bg-Rubber-Ducky"></span>
@@ -28,7 +32,7 @@ const Projects = () => {
           {/* end of single card */}
 
           {/* single card */}
-          <article className="card border-invoice border">
+          <article className="card cursor-pointer border-invoice border">
             <header className="card-header">
               <span className="bg-bright-red"></span>
               <span className="bg-Rubber-Ducky"></span>
@@ -47,7 +51,7 @@ const Projects = () => {
           {/* end of single card */}
 
           {/* single card */}
-          <article className="card border border-feedback">
+          <article className="card border cursor-pointer border-feedback">
             <header className="card-header">
               <span className="bg-bright-red"></span>
               <span className="bg-Rubber-Ducky"></span>
@@ -66,7 +70,7 @@ const Projects = () => {
           {/* end of single card */}
 
           {/* single card */}
-          <article className="card border border-Peach">
+          <article className="card border cursor-pointer border-Peach">
             <header className="card-header">
               <span className="bg-bright-red"></span>
               <span className="bg-Rubber-Ducky"></span>

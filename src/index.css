@@ -203,11 +203,14 @@ textarea:invalid[focused='true'] ~ .form-alert {
 textarea:invalid[focused='true'] {
   border: 1px solid #f43030;
 }
+/* .closing-text-container {
+  margin: 3rem auto;
+} */
 .closing-text {
   max-width: 60rem;
 }
 @media (min-width: 1024px) {
   .form {
-    margin: 0 -1rem;
+    margin: 0rem;
   }
 }

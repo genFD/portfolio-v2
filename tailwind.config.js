@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     colors: {
       'desaturated-cyan': '#5FB4A2',
+      'desaturated-cyan-200': '#20cca7',
       devjobs: '#5964E0',
       audiophile: '#D87D4A',
       feedback: '#AD1FEA',

@@ -3,9 +3,8 @@ import Spinner from 'react-spinkit';
 
 const Loader = () => {
   return (
-    <div className="flex gap-y-2 h-screen justify-center items-center">
-      <Spinner name="triangle-skew-spin" color="#5FB4A2" />
-      <Spinner name="triangle-skew-spin" color="#5FB4A2" />
+    <div className="flex h-screen justify-center items-center">
+      <Spinner name="wave" color="#5FB4A2" />
     </div>
   );
 };

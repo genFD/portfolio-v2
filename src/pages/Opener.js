@@ -7,7 +7,7 @@ const Opener = () => {
   window.onload = () => {
     setTimeout(() => {
       setLoading(false);
-    }, 4950);
+    }, 4500);
   };
   return loading ? <Loader /> : <Home />;
 };

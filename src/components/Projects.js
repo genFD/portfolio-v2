@@ -17,9 +17,8 @@ const Projects = () => {
             <div className="card-info">
               <h3>card title</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque assumenda, fugiat dolore illo porro deserunt quaerat
-                officia.
+                This is a CRUD RESTful API in a Node.js environment that runs on
+                an Express server and uses a PostgreSQL database
               </p>
             </div>
             <footer className="card-footer">

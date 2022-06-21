@@ -154,7 +154,9 @@ const ContactForm = () => {
 
         <button
           disabled={submitting}
-          className="form-btn uppercase bg-desaturated-cyan shadow-lg w-48 h-12 flex items-center justify-center"
+          className="form-btn uppercase bg-desaturated-cyan shadow-lg w-48 h-12 flex items-center justify-center
+          hover:bg-desaturated-cyan-200 transition-colors duration-300
+          "
           type="submit"
         >
           {submitting ? <Submitting /> : 'Send message'}

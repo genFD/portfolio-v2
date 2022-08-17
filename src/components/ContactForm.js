@@ -123,7 +123,7 @@ const ContactForm = () => {
             value={formData.email}
             name="email"
             type="email"
-            placeholder="Example@email.com"
+            placeholder="example@email.com"
             onChange={collectInputData}
             className="form-input"
             required

@@ -35,6 +35,8 @@ body {
   min-height: 100vh;
   background-color: #121c30;
   color: rgb(227, 224, 247);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* make images easier to work with */
@@ -134,7 +136,6 @@ ul {
   max-width: 1170px;
   display: grid;
   column-gap: 32px;
-  /* grid-template-columns: repeat(auto-fill, minmax(368px, 1fr)); */
   grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
 }
 .card {

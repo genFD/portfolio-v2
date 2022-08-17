@@ -43,7 +43,7 @@ const Projects = () => {
             </div>
             <footer className="card-footer text-invoice px-4 flex items-center justify-between">
               <span className="hover:underline">
-                <a href="https://testdeploycra.herokuapp.com/">Live demo</a>
+                <a href="https://invoicev1.herokuapp.com/">Live demo</a>
               </span>
               <div className="flex gap-3 pb-1 ">
                 <span>
@@ -80,7 +80,7 @@ const Projects = () => {
               <span className="bg-desaturated-cyan"></span>
             </header>
             <img src="/assets/devjobs.jpg" alt="" className="" />
-            <div className="card-info font-baloo">
+            <div className="card-info font-jost">
               <h3 className="text-body-1 text-devjobs font-bold underline">
                 Devjobs
               </h3>

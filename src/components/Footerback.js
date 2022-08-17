@@ -47,7 +47,7 @@ const Footerback = () => {
         </li>
         <li className="cursor-pointer">
           <a
-            href="https://twitter.com/HermannKan1"
+            href="https://twitter.com/fs_base"
             target="_blank"
             rel="noreferrer"
           >

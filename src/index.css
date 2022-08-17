@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ------------------- */
 /* Reset starts             */
 /* ------------------- */
 
@@ -192,16 +191,22 @@ ul {
   display: none;
 }
 
-input:invalid[focused='true'] ~ .form-alert {
+input:invalid[focusname='true'] ~ small {
   display: block;
 }
-input:invalid[focused='true'] {
+input:invalid[focusname='true'] {
   border: 1px solid #f43030;
 }
-textarea:invalid[focused='true'] ~ .form-alert {
+input:invalid[focusemail='true'] ~ small {
   display: block;
 }
-textarea:invalid[focused='true'] {
+input:invalid[focusemail='true'] {
+  border: 1px solid #f43030;
+}
+textarea:invalid[focusmessage='true'] ~ small {
+  display: block;
+}
+textarea:invalid[focusmessage='true'] {
   border: 1px solid #f43030;
 }
 /* .closing-text-container {

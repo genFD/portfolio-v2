@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Submitting } from '../components';
 
 const initialformState = {
@@ -19,7 +20,10 @@ const ContactForm = () => {
   const [formData, setFormData] = useState(initialformState);
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState();
-
+  const [focusname, setFocusName] = useState(false);
+  const [focusemail, setFocusEmail] = useState(false);
+  const [focusmessage, setFocusMessage] = useState(false);
+  const navigate = useNavigate();
   const formId = 'CFxKRXF7';
   const formUrl = `https://submit-form.com/${formId}`;
 
@@ -31,6 +35,9 @@ const ContactForm = () => {
       const result = await axios.post(formUrl, payload);
       setMessage(successMessage);
       setFormData(initialformState);
+      setFocusName(false);
+      setFocusEmail(false);
+      setFocusMessage(false);
       console.log(result);
     } catch (error) {
       setMessage(errorMessage);
@@ -43,6 +50,8 @@ const ContactForm = () => {
     setSubmitting(true);
     await postSubmission();
     setSubmitting(false);
+
+    navigate('/contact');
   };
 
   const collectInputData = (e) => {
@@ -102,11 +111,13 @@ const ContactForm = () => {
           <input
             id="name"
             name="name"
-            type="name"
+            type="text"
             value={formData.name}
             placeholder="Name"
             onChange={collectInputData}
-            className="form-input"
+            onBlur={() => setFocusName(true)}
+            focusname={focusname.toString()}
+            className="form-input focus:outline-none border focus:border-desaturated-cyan focus:ring-desaturated-cyan caret-desaturated-cyan cursor-pointer"
             required
           />
           <small className="form-alert text-body-3 mt-2">
@@ -125,7 +136,9 @@ const ContactForm = () => {
             type="email"
             placeholder="example@email.com"
             onChange={collectInputData}
-            className="form-input"
+            onBlur={() => setFocusEmail(true)}
+            focusemail={focusemail.toString()}
+            className="form-input focus:outline-none border focus:border-desaturated-cyan focus:ring-desaturated-cyan caret-desaturated-cyan cursor-pointer"
             required
           />
           <small className="form-alert text-body-3 mt-2">
@@ -140,10 +153,12 @@ const ContactForm = () => {
           <textarea
             id="message"
             name="message"
-            type="message"
+            type="text"
             placeholder="Enter your message"
             onChange={collectInputData}
-            className="form-textarea"
+            onBlur={() => setFocusMessage(true)}
+            focusmessage={focusmessage.toString()}
+            className="form-textarea focus:outline-none border focus:border-desaturated-cyan focus:ring-desaturated-cyan caret-desaturated-cyan cursor-pointer"
             value={formData.message}
             required
           />

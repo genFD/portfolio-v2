@@ -1,3 +1,9 @@
+import Express from './Express';
+import Github from './Github';
+import Node from './Node';
+import Postgresql from './Postgresql';
+import ReactIcon from './React';
+
 const Projects = () => {
   return (
     <div>
@@ -14,45 +20,104 @@ const Projects = () => {
             </p>
           </div> */}
         </div>
-        <div className="cards-center my-8 mx-auto">
+        <div className=" flex flex-col px-6 tablet:flex-row justify-center mt-10 gap-8 h-full">
           {/* single card */}
-          <article className="card cursor-pointer border-invoice border">
+          <article className="card cursor-pointer border-invoice border laptop:w-96">
             <header className="card-header">
               <span className="bg-bright-red"></span>
               <span className="bg-Rubber-Ducky"></span>
               <span className="bg-desaturated-cyan"></span>
             </header>
-            <img src="/assets/invoice.jpg" alt="" />
+            <img src="/assets/invoice.jpg" alt="" className="" />
             <div className="card-info">
-              <h3>Invoice App</h3>
+              <h3 className="text-body-1 text-invoice font-bold underline ">
+                Invoice App
+              </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque assumenda, fugiat dolore illo porro deserunt quaerat
-                officia.
+                Full stack{' '}
+                <span className="text-invoice">invoicing application</span>{' '}
+                <br />
+                CRUD RESTful API built with Node.js and Express.
+                <br /> It uses PostgreSQL database.
               </p>
             </div>
+            <footer className="card-footer text-invoice px-4 flex items-center justify-between">
+              <span className="hover:underline">
+                <a href="https://testdeploycra.herokuapp.com/">Live demo</a>
+              </span>
+              <div className="flex gap-3 pb-1 ">
+                <span>
+                  <Node />
+                </span>
+                <span>
+                  <Express />
+                </span>
+                <span>
+                  <Postgresql />
+                </span>
+                <span>
+                  <ReactIcon />
+                </span>
+                <span>
+                  <a
+                    href="https://github.com/hermkan/devjobs"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Github />
+                  </a>
+                </span>
+              </div>
+            </footer>
           </article>
           {/* end of single card */}
 
           {/* single card */}
-          <article className="card cursor-pointer border border-devjobs">
+          <article className="card cursor-pointer border border-devjobs laptop:w-96">
             <header className="card-header">
               <span className="bg-bright-red"></span>
               <span className="bg-Rubber-Ducky"></span>
               <span className="bg-desaturated-cyan"></span>
             </header>
-            <img src="/assets/devjobs.jpg" alt="" />
-            <div className="card-info">
-              <h3>Devjobs</h3>
+            <img src="/assets/devjobs.jpg" alt="" className="" />
+            <div className="card-info font-baloo">
+              <h3 className="text-body-1 text-devjobs font-bold underline">
+                Devjobs
+              </h3>
               <p>
-                This is a CRUD RESTful API in a Node.js environment that runs on
-                an Express server and uses a PostgreSQL database
+                Full stack <span></span>
+                <span className="text-devjobs">jobs board</span> <br />
+                RESTful API built with Node.js and Express.
+                <br /> It uses PostgreSQL database.
               </p>
             </div>
-            <footer className="card-footer">
-              <span>
+            <footer className="card-footer text-devjobs px-4 flex items-center justify-between">
+              <span className="hover:underline">
                 <a href="https://testdeploycra.herokuapp.com/">Live demo</a>
               </span>
+              <div className="flex gap-3 pb-1 ">
+                <span>
+                  <Node />
+                </span>
+                <span>
+                  <Express />
+                </span>
+                <span>
+                  <Postgresql />
+                </span>
+                <span>
+                  <ReactIcon />
+                </span>
+                <span>
+                  <a
+                    href="https://github.com/hermkan/devjobs"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Github />
+                  </a>
+                </span>
+              </div>
             </footer>
           </article>
           {/* end of single card */}

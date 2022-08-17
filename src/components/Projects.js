@@ -43,7 +43,13 @@ const Projects = () => {
             </div>
             <footer className="card-footer text-invoice px-4 flex items-center justify-between">
               <span className="hover:underline">
-                <a href="https://invoicev1.herokuapp.com/">Live demo</a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://invoicev1.herokuapp.com/"
+                >
+                  Live demo
+                </a>
               </span>
               <div className="flex gap-3 pb-1 ">
                 <span>
@@ -93,7 +99,13 @@ const Projects = () => {
             </div>
             <footer className="card-footer text-devjobs px-4 flex items-center justify-between">
               <span className="hover:underline">
-                <a href="https://testdeploycra.herokuapp.com/">Live demo</a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://testdeploycra.herokuapp.com/"
+                >
+                  Live demo
+                </a>
               </span>
               <div className="flex gap-3 pb-1 ">
                 <span>

@@ -66,7 +66,7 @@ const Projects = () => {
                 </span>
                 <span>
                   <a
-                    href="https://github.com/hermkan/devjobs"
+                    href="https://github.com/hermkan/invoicesv1"
                     target="_blank"
                     rel="noreferrer"
                   >
